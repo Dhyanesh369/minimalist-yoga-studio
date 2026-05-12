@@ -86,7 +86,7 @@ export const Section = ({ children, className, bg = "white", id }: SectionProps)
 
 interface HeadingProps {
   level?: 1 | 2 | 3;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   className?: string;
   subtitle?: string;
   center?: boolean;
@@ -102,9 +102,11 @@ export const Heading = ({ level = 2, children, className, subtitle, center = fal
           {subtitle}
         </span>
       )}
-      <Tag className={`${level === 1 ? "text-6xl md:text-8xl" : level === 2 ? "text-5xl md:text-7xl" : "text-3xl md:text-4xl"} leading-tight tracking-tight`}>
-        {children}
-      </Tag>
+      {children && (
+        <Tag className={`${level === 1 ? "text-6xl md:text-8xl" : level === 2 ? "text-5xl md:text-7xl" : "text-3xl md:text-4xl"} leading-tight tracking-tight`}>
+          {children}
+        </Tag>
+      )}
     </div>
   );
 };
