@@ -70,8 +70,8 @@ interface SectionProps {
 
 export const Section = ({ children, className, bg = "white", id }: SectionProps) => {
   const backgrounds = {
-    white: "bg-background",
-    ivory: "bg-secondary-bg",
+    white: "bg-[#FDFCFB]",
+    ivory: "bg-[#F8F6F2]",
     sand: "bg-[#F5F2EE]",
   };
 
