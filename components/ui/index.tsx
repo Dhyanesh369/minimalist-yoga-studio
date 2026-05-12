@@ -93,7 +93,7 @@ interface HeadingProps {
 }
 
 export const Heading = ({ level = 2, children, className, subtitle, center = false }: HeadingProps) => {
-  const Tag = `h${level}` as keyof JSX.IntrinsicElements;
+  const Tag = `h${level}` as keyof React.JSX.IntrinsicElements;
   
   return (
     <div className={`mb-20 md:mb-32 ${center ? "text-center" : ""} ${className}`}>
