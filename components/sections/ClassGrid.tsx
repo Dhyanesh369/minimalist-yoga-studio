@@ -41,7 +41,7 @@ export default function ClassGrid() {
         </Link>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
         {classes.map((cls, index) => (
           <motion.div
             key={cls.title}
@@ -51,7 +51,7 @@ export default function ClassGrid() {
             transition={{ duration: 2, delay: index * 0.1, ease: [0.22, 1, 0.36, 1] }}
             className="group cursor-pointer"
           >
-            <div className="relative h-[500px] rounded-[32px] overflow-hidden mb-10 shadow-soft">
+            <div className="relative h-[400px] md:h-[500px] rounded-[32px] overflow-hidden mb-10 shadow-soft">
               <Image
                 src={cls.image}
                 alt={cls.title}

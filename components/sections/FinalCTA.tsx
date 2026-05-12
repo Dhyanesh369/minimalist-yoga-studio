@@ -6,7 +6,7 @@ import { Button, Heading } from "@/components/ui";
 
 export default function FinalCTA() {
   return (
-    <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
+    <section className="relative h-[600px] md:h-[80vh] flex items-center justify-center overflow-hidden">
       <div className="container-custom relative z-10 text-center">
         <motion.div
           initial={{ opacity: 0, y: 10 }}

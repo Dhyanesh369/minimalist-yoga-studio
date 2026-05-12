@@ -9,14 +9,14 @@ import { Section, Heading, Button } from "@/components/ui";
 export default function AboutPreview() {
   return (
     <Section>
-      <div className="flex flex-col lg:flex-row items-center gap-32">
+      <div className="flex flex-col lg:flex-row items-center gap-20 lg:gap-32">
         {/* Left: Image */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-10%" }}
           transition={{ duration: 2.2, ease: [0.22, 1, 0.36, 1] }}
-          className="w-full lg:w-1/2 relative h-[700px] rounded-[32px] overflow-hidden shadow-soft"
+          className="w-full lg:w-1/2 relative h-[500px] lg:h-[700px] rounded-[32px] overflow-hidden shadow-soft"
         >
           <Image
             src="/images/detail.png"

@@ -41,12 +41,14 @@
   html {
     background-color: var(--color-background);
     scrollbar-gutter: stable;
+    color-scheme: light;
   }
 
   /* Lenis Support */
   html.lenis,
   html.lenis body {
     height: auto;
+    background-color: var(--color-background);
   }
 
   .lenis.lenis-smooth {
@@ -79,6 +81,7 @@
     @apply bg-background text-foreground font-body;
     line-height: 1.85;
     letter-spacing: -0.01em;
+    color-scheme: light;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -91,18 +94,18 @@
   h3 { font-size: clamp(26px, 4.5vw, 42px); }
 
   section {
-    @apply py-[80px] md:py-[100px] lg:py-[140px] px-6 md:px-12;
+    @apply py-16 md:py-24 lg:py-36 px-4 md:px-8 lg:px-12;
   }
 
   p {
     @apply text-muted-text max-w-[65ch];
-    font-size: 18px;
-    line-height: 1.9;
+    font-size: clamp(16px, 4vw, 18px);
+    line-height: 1.8;
     letter-spacing: 0.015em;
   }
 
   .container-custom {
-    @apply max-w-[1400px] mx-auto w-full px-4;
+    @apply max-w-[1400px] mx-auto w-full px-4 md:px-6 lg:px-8;
   }
 
   .shadow-soft {
